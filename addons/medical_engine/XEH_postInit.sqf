@@ -108,7 +108,7 @@
     params ["_unit"];
     TRACE_3("unit Killed",_unit,objectParent _unit,local _unit);
     if (!isNull objectParent _unit && {local objectParent _unit}) exitWith {
-        [_unit] call FUNC(lockUnconsciousSeat);
+        [_unit] call FUNC(unlockUnconsciousSeat);
     };
 }] call CBA_fnc_addEventHandler;
 
